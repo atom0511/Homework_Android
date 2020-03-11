@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textSize">25dp</dimen>
+    <dimen name="shadowSize">20</dimen>
+    <dimen name="textBigSize">32dp</dimen>
     <dimen name="radiusButton">60dp</dimen>
     <dimen name="rangeButton">25dp</dimen>
-    <dimen name="halfRangeButton">12dp</dimen>
     <dimen name="lengthOfLongButton">145dp</dimen>
 
 </resources>

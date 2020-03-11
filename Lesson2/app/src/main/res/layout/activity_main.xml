@@ -17,6 +17,10 @@
             android:orientation="vertical">
 
             <EditText
+                android:shadowColor="@color/blueText"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
                 android:backgroundTint="#fff"
                 android:layout_marginBottom="0dp"
                 android:id="@+id/et_input"
@@ -26,10 +30,13 @@
                 android:hint="Input number"
                 android:text="25x32"
                 android:textColor="@color/blueText"
-                android:shadowColor="#fff0"
                 android:textDirection="rtl" />
 
             <TextView
+                android:shadowColor="@color/blueText"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
                 android:id="@+id/tv_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,6 +69,10 @@
                 android:layout_weight="1">
 
                 <Button
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/percent"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -78,6 +89,10 @@
                 android:layout_weight="1">
 
                 <Button
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/bt_division"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -95,6 +110,10 @@
                 android:layout_weight="1">
 
                 <Button
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/bt_multi"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -103,7 +122,7 @@
                     android:gravity="center"
                     android:text="×"
                     android:textColor="@color/whiteText"
-                    android:textSize="@dimen/textSize" />
+                    android:textSize="@dimen/textBigSize" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -112,7 +131,10 @@
                 android:layout_weight="1">
 
                 <ImageButton
-
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="20"
                     android:id="@+id/ibt_backspace"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -188,8 +210,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
-
                 <Button
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/bt_sub"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -198,7 +223,7 @@
                     android:gravity="center"
                     android:text="–"
                     android:textColor="@color/whiteText"
-                    android:textSize="@dimen/textSize" />
+                    android:textSize="@dimen/textBigSize" />
             </RelativeLayout>
 
 
@@ -268,6 +293,10 @@
                 android:layout_weight="1">
 
                 <ImageButton
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/bt_sum"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/radiusButton"
@@ -276,7 +305,7 @@
                     android:gravity="center"
                     android:src="@drawable/ic_add_black_24dp"
                     android:textColor="@color/whiteText"
-                    android:textSize="@dimen/textSize" />
+                    android:textSize="@dimen/textBigSize" />
             </RelativeLayout>
 
 
@@ -346,7 +375,7 @@
 
                     <Button
                         android:id="@+id/bt_zero"
-                        android:layout_width="@dimen/lengthOfLongButton"
+                        android:layout_width="150dp"
                         android:layout_height="@dimen/radiusButton"
                         android:layout_centerInParent="true"
                         android:background="@drawable/white_radius"
@@ -405,6 +434,10 @@
                 android:layout_weight="1">
 
                 <Button
+                    android:shadowColor="@color/whiteText"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="@dimen/shadowSize"
                     android:id="@+id/bt_equal_sign"
                     android:layout_width="@dimen/radiusButton"
                     android:layout_height="@dimen/lengthOfLongButton"
