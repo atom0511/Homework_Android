@@ -2,24 +2,421 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.25"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.25"
-        android:background="#ff0"/>
+    android:background="#3F51B5"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="7.5"
-        android:background="#3F51B5"/>
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:backgroundTint="#fff"
+                android:layout_marginBottom="0dp"
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:hint="Input number"
+                android:text="25x32"
+                android:textColor="@color/blueText"
+                android:shadowColor="#fff0"
+                android:textDirection="rtl" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_input"
+                android:layout_alignParentEnd="true"
+                android:text="880"
+                android:textColor="@color/blueText"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/rangeButton"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/percent"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_round"
+                    android:text="%"
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_division"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_round"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_multi"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_round"
+                    android:gravity="center"
+                    android:text="×"
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+
+                    android:id="@+id/ibt_backspace"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/red_round"
+                    android:gravity="center"
+                    android:src="@drawable/ic_backspace_black_24dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rangeButton"
+            android:layout_marginRight="@dimen/rangeButton"
+            android:layout_marginBottom="@dimen/rangeButton"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_seven"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:text="7"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_eight"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_nine"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_sub"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_round"
+                    android:gravity="center"
+                    android:text="–"
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rangeButton"
+            android:layout_marginRight="@dimen/rangeButton"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_four"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:text="4"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_five"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_six"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_round"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/blueText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/bt_sum"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/radiusButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_round"
+                    android:gravity="center"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/rangeButton"
+            android:background="#3F51B5"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/rangeButton"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/bt_one"
+                            android:layout_width="@dimen/radiusButton"
+                            android:layout_height="@dimen/radiusButton"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/white_round"
+                            android:text="1"
+                            android:textColor="@color/blueText"
+                            android:textSize="@dimen/textSize" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/bt_two"
+                            android:layout_width="@dimen/radiusButton"
+                            android:layout_height="@dimen/radiusButton"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/white_round"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/blueText"
+                            android:textSize="@dimen/textSize" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_zero"
+                        android:layout_width="@dimen/lengthOfLongButton"
+                        android:layout_height="@dimen/radiusButton"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/white_radius"
+                        android:text="0"
+                        android:textColor="@color/blueText"
+                        android:textSize="@dimen/textSize" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/rangeButton"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_three"
+                        android:layout_width="@dimen/radiusButton"
+                        android:layout_height="@dimen/radiusButton"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/white_round"
+                        android:text="3"
+                        android:textColor="@color/blueText"
+                        android:textSize="@dimen/textSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_dot"
+                        android:layout_width="@dimen/radiusButton"
+                        android:layout_height="@dimen/radiusButton"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/white_round"
+                        android:text="."
+                        android:textColor="@color/blueText"
+                        android:textSize="@dimen/textSize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bt_equal_sign"
+                    android:layout_width="@dimen/radiusButton"
+                    android:layout_height="@dimen/lengthOfLongButton"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radius"
+                    android:text="="
+                    android:textColor="@color/whiteText"
+                    android:textSize="@dimen/textSize" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
