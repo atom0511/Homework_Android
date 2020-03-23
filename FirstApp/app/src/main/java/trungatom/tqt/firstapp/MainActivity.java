@@ -53,12 +53,7 @@ public class MainActivity extends AppCompatActivity {
         if (imageAdapter.getCount() != 0) {
             relativeLayout.setVisibility(View.INVISIBLE);
         }
-
         imageUtils = new ImageUtils();
-        deleteImage();
-    }
-
-    private void deleteImage(){
         gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
@@ -68,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void deleteImage(Context context, final int position){
         new AlertDialog.Builder(context)
@@ -84,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         imageUtils.getListImage().get(position).delete();
                         imageAdapter.notifyDataSetChanged();
+                        if (imageAdapter.getCount() == 0) {
+                            relativeLayout.setVisibility(View.VISIBLE);
+                        }
                     }
                 }).show();
 
@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        if (imageAdapter.getCount() != 0) {
+            relativeLayout.setVisibility(View.INVISIBLE);
+        }
         imageAdapter.notifyDataSetChanged();
     }
 
