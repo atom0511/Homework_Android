@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_my_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_noimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="No image"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = 'Tap "+" to creat a new one'
+            android:textSize="@dimen/space_16dp"
+            android:layout_below="@+id/tv_noimage"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gv_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="3"
+        android:padding="@dimen/space_16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space_16dp"
+        android:src="@drawable/ic_add_black_24dp" />
+
+
+</RelativeLayout>
