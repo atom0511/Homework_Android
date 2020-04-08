@@ -1,4 +1,4 @@
-package trungatom.tqt.lesson5;
+package trungatom.tqt.lesson5.adapters;
 
 import android.content.Context;
 

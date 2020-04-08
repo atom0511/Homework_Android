@@ -22,7 +22,7 @@ public class ContactAdapter extends ArrayAdapter<Contact> {
     public ContactAdapter(Context context, int resource, List<Contact> objects) {
         super(context, resource, objects);
         this.context = context;
-        this. resource = resource;
+        this.resource = resource;
         this.arrContact = objects;
     }
 
