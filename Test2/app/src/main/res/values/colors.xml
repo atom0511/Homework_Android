@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleTextColor">#242424</color>
+    <color name="contentTextColor">#545454</color>
+    <color name="homeTagColor">#a5e830</color>
+    <color name="familyTagColor">#30c9e8</color>
+    <color name="workTagColor">#8930e8</color>
+    <color name="defaultTagColor">#e88c30</color>
+    <color name="backGroundColor">#F7F7F7</color>
+    <color name="primaryColor">#e88c30</color>
+    <color name="primaryDarkColor">#915110</color>
+    <color name="accentColor">#16a9c7</color>
+    <color name="birthTagColor">#E6E30C82</color>
+
+    <color name="colorAccent">#6c3346</color>
+    <color name="colorPrimaryDark">#663344</color>
+    <color name="colorPrimary">#966474</color>
+</resources>

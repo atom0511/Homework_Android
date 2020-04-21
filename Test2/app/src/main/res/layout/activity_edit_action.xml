@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddAction">
+    <ImageView
+        android:id="@+id/iv_back_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:padding="16dp"/>
+    <RelativeLayout
+        android:layout_margin="@dimen/spaceSixteen"
+        android:layout_below="@id/iv_back_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/sn_tag_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="tag"/>
+        <EditText
+            android:layout_below="@id/sn_tag_edit"
+            android:inputType="number"
+            android:id="@+id/et_date_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="date"/>
+
+        <EditText
+            android:layout_below="@id/et_date_edit"
+            android:id="@+id/et_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="title"/>
+
+        <EditText
+            android:layout_below="@id/et_title_edit"
+            android:id="@+id/et_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="content"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_margin="@dimen/spaceMedium"
+        android:id="@+id/bt_save_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:background="@drawable/custom_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -44,7 +44,6 @@ public class BookListActivity extends AppCompatActivity {
         Log.d("check", "onCreate: " + position);
     }
 
-
     public void getData(int position) {
         Glide.with(this).load(DatabaseUtils.getInstance(this).getListTopic().get(position).getmImage()).into(ivImageInside);
         tvTitleInside.setText(DatabaseUtils.getInstance(this).getListTopic().get(position).getmTitle());

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spaceMedium">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="40dp"
+        android:layout_height="116dp"
+        android:background="@drawable/custom_tv"
+        android:gravity="center"
+        android:maxLength="6"
+        android:text="3 Apr"
+        android:textSize="@dimen/textMedium"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spaceMedium"
+        android:layout_toRightOf="@id/tv_date"
+        android:background="@color/backGroundColor">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spaceMedium"
+            android:maxLines="1"
+            android:text="Go home"
+            android:textSize="@dimen/textLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/spaceMedium"
+            android:layout_marginTop="@dimen/spaceSixteen"
+            android:background="@drawable/custom_tv_tag"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:text="birth"
+            android:textSize="@dimen/textMedium" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tag"
+            android:layout_marginLeft="@dimen/spaceMedium"
+            android:layout_marginTop="@dimen/spaceSixteen"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="aaaaaaaaaaaaaaaaa" />
+    </RelativeLayout>
+
+</RelativeLayout>
